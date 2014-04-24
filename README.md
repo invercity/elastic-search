@@ -1,6 +1,6 @@
-elastic-search
+raxa-search
 ==============
-Secure and fast Elastic Search on various Raxa backend resources including patient, person, encounter, obs, etc
+Secure and fast Node.JS based search module on various Raxa backend resources including patient, person, encounter, obs, etc
 Requirements
 -------------
 ```
@@ -13,7 +13,7 @@ elasticsearch mysql-river plugin & MySQL JDBC connector (for indexing)
 ```
 Installing required software (Ubuntu)
 -----------------------------
-### Installing Elasticsearch server
+### Installing ElasticSearch server
 You can get latest version of ```ES``` from official website, or install it using commands:
 ```
 wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.2.deb
@@ -54,7 +54,7 @@ sudo apt-get install nodejs npm
 ### Installing elastic-search
 You can get ```elastic-search``` using ```git```:
 ```
-git clone https://github.com/invercity/elastic-search.git
+git clone https://github.com/invercity/raxa-search.git
 ```
 ### Installing required modules
 Currently you can install it using:
