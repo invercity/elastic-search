@@ -5,11 +5,19 @@ Requirements
 -------------
 ```
 JDK v6+ (for Elasticsearch server)
-Elasticsearch v0.9+
+ElasticSearch
 MySQL server
-Node.JS v0.8+
-npm v1.3+
+Node.JS
+npm
 elasticsearch mysql-river plugin & MySQL JDBC connector (for indexing)
+```
+Tested on
+---------
+```
+ElasticSearch v1.1
+Node.JS v0.10.15
+Oracle Java/JDK 8
+Kubuntu 13.10 64 bit
 ```
 Installing required software (Ubuntu)
 -----------------------------
@@ -60,14 +68,13 @@ git clone https://github.com/invercity/raxa-search.git
 Currently you can install it using:
 ```
 cd elastic-search
-npm install
+npm i
 ```
 Configuring
 -----------
 Before running, you must set up ```MySQL``` and ```Elasticsearch``` server configuration
 for this, edit ```default.json``` file
 ```
-cd config
 nano default.json
 ```
 Running
@@ -76,7 +83,7 @@ To run search server just execute next command:
 ```
 npm start
 ```
-Testing
+Testing (currently unsupported)
 -------
 At first, install ```jasmine-node```
 ```
@@ -90,13 +97,13 @@ Indexing
 -------
 When you're done with testing, you can run ```rivers``` for indexing data from MySQL:
 ```
-node app.js river
+nodejs app.js river
 ```
-*** Note, that ```river``` transmitting data taking some time, so at the first time server will *NO* return any data, 
+*** Note, that ```river``` transmitting data taking some time, so at the first time server will *NO* return any data,
 just wait while indexes will be created
 To remove data, run
-``` 
-node app.js clean
+```
+nodejs app.js clean
 ```
 Additional info
 ---------------

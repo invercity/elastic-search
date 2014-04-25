@@ -1,16 +1,16 @@
 {
   "name": "elastic-search",
-  "version": "0.0.1",
+  "version": "0.2",
   "author": "invercity",
-  "description": "node js search server for raxa back end",
+  "description": "node js based search server for raxa back end",
   "contributors": [ 
     {
       "name": "Andriy Ermolenko",
-      "email": "invercity1991@gmail.com"
+      "email": "andriy.ermolenko@gmail.com"
     } 
   ],
   "scripts": {
-    "start": "node --expose-gc ./app.js run",
+    "start": "nodejs --expose-gc ./app.js run",
     "test" : "jasmine-node --verbose test/SampleSpec.js"
   },
   "repository": {
@@ -22,7 +22,9 @@
    "elasticsearchclient" : "*",
    "async" : "*",
    "express" : "*",
-   "request" : "*"
+   "request" : "*",
+   "body-parser" : "*",
+   "connect": "*"
   },
   "analyze": false,
   "engines": {
